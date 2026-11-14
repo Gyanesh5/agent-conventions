@@ -1,0 +1,25 @@
+{
+  "name": "agent-conventions",
+  "owner": {
+    "name": "Gyanesh5",
+    "url": "https://github.com/Gyanesh5"
+  },
+  "description": "Gyanesh5 的三合一 agent 规范插件市场（自举：本仓库即插件）",
+  "plugins": [
+    {
+      "name": "agent-conventions",
+      "source": "./",
+      "description": "三合一规范插件：plain-zh 平实中文写作规范、coding-conventions 编码规范路由、industrial-impeccable 工业视觉 HMI 设计规则",
+      "version": "1.0.0",
+      "category": "conventions",
+      "tags": [
+        "chinese",
+        "writing",
+        "coding-standards",
+        "industrial",
+        "hmi",
+        "design-rules"
+      ]
+    }
+  ]
+}

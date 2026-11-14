@@ -1,0 +1,23 @@
+{
+  "name": "agent-conventions",
+  "description": "三合一规范插件：plain-zh 平实中文写作规范、coding-conventions 编码规范路由、industrial-impeccable 工业视觉 HMI 设计规则",
+  "version": "1.0.0",
+  "author": {
+    "name": "Gyanesh5",
+    "url": "https://github.com/Gyanesh5"
+  },
+  "homepage": "https://github.com/Gyanesh5/agent-conventions",
+  "repository": "https://github.com/Gyanesh5/agent-conventions",
+  "license": "MIT",
+  "keywords": [
+    "chinese",
+    "plain-language",
+    "writing",
+    "coding-standards",
+    "conventions",
+    "industrial",
+    "hmi",
+    "design-system",
+    "machine-vision"
+  ]
+}
