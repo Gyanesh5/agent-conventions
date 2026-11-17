@@ -81,7 +81,23 @@ class CameraError(DeviceError):
 
 ## 文档字符串
 
-公共 API 写行为契约：单位、异常条件、线程/进程约束、副作用——签名与类型能表达的不写。内部函数命名清晰时不写 docstring。
+公开函数和类必须有 docstring，使用 Google 风格。
+
+```python
+def detect_circles(image: NDArray, min_radius: int = 10) -> list[CircleResult]:
+    """检测图像中的圆形。
+
+    Args:
+        image: 输入灰度图。
+        min_radius: 最小半径，默认 10。
+
+    Returns:
+        检测到的圆形列表。
+
+    Raises:
+        ValueError: 图像为空或参数无效。
+    """
+```
 
 ---
 
