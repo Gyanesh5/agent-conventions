@@ -7,8 +7,8 @@
 提交前必须通过：类型检查、格式化、测试。
 
 ```bash
-# Python
-ruff check . && ruff format . && mypy . && pytest
+# Python（pytest 跑快集；全量留给合并前，见 testing.md 节奏三档）
+ruff check . && ruff format . && mypy . && pytest -m "not slow" -n auto
 
 # C++
 clang-format -i $(git diff --name-only --cached -- '*.cpp' '*.h') \
