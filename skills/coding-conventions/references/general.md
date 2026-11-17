@@ -19,18 +19,6 @@ clang-format -i $(git diff --name-only --cached -- '*.cpp' '*.h') \
 
 ## Git 提交规范
 
-### 分支命名
-
-| 前缀 | 用途 | 示例 |
-|------|------|------|
-| `feature/` | 新功能 | `feature/dual-busbar` |
-| `fix/` | Bug 修复 | `fix/pose-calculation` |
-| `refactor/` | 重构 | `refactor/machine-split` |
-| `hotfix/` | 紧急修复 | `hotfix/crash-on-startup` |
-| `docs/` | 文档 | `docs/api-standard` |
-
-必须使用 feature 分支开发，禁止直接提交到 main。
-
 ### 禁止用 Git 命令回滚代码
 
 禁止 `git reset --hard`、`git checkout -- .` 等命令丢弃工作区改动。需要"回滚"时，用编辑工具按 diff 手动恢复代码——过程可见、可审查；Git 命令一把抹掉，不可见且不可逆。
@@ -65,15 +53,6 @@ Conventional Commits 格式：
 ✅ refactor(misc): 补齐关键节点日志与测试时钟注入
 ❌ refactor(conventions): 票 11 规范合规修复  （conventions 非仓库模块；"票 11"为本地编号）
 ```
-
----
-
-## PR 规范
-
-- PR 标题遵循 Commit 消息格式与约束（`type(scope): 简短描述`，≤50 字符，含 scope 取值与对外可见性要求）
-- 必须至少一人审查批准后才能合并
-- 合并前必须通过所有 CI 检查
-- PR 描述必须说明变更内容和动机
 
 ---
 

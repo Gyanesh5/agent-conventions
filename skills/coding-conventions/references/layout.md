@@ -148,7 +148,7 @@ tools/
 └── gen_config_reference.py  # 配置参考生成
 ```
 
-- `tools/` 下的脚本须在文件头注明作者、日期、用途
+- `tools/` 下的脚本须在文件头注明用途（作者与日期查 git 历史，不写）
 - `scripts/` 下的脚本须可被 systemd 或运维流程直接调用，不依赖交互输入
 
 ---
