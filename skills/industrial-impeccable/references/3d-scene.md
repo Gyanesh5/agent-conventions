@@ -1,4 +1,4 @@
-# C 族 · 3D 场景（three.js，机器人单元可视化）
+# C 族 · 3D 场景（机器人单元可视化，参考实现 three.js）
 
 > 底本：cesartevisual/threejs-skills spatial-data + performance（MIT）。
 

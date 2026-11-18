@@ -3,12 +3,14 @@ name: industrial-impeccable
 description: "Industrial vision HMI design rules: design tokens, per-surface-family rules (camera viewport, annotation canvas, 3D scene, monitoring, alarms, forms/tables, wizards, reports), and agent guardrails for machine-vision web UIs. Use when designing, building, reviewing, or auditing operator screens, dashboards, annotation tools, or reports for CNC-vision / cobot production lines — with or without the impeccable skill as host."
 license: MIT
 metadata:
-  version: "0.1.0"
+  version: "0.1.1"
 ---
 
 # industrial-impeccable — 工业视觉 Web 界面设计规则
 
 本技能是知识库 + 项目文件生成底稿：规则全局复用，实例文件生成进各项目。与 impeccable 配合时沿用其模式体系与文件装载；单用亦可（纯 Markdown，任何 agent 可读）。
+
+规则核心栈无关：条款只约束性质（密度、语义色、交互纪律），不绑定前端框架或组件库。文中出现的组件库名（konva、three.js、ECharts、ElementPlus 等）均为当前参考实现，换栈时等价替换、规则不变。
 
 ## 三条红线（任何 UI 任务，先于一切）
 
@@ -30,13 +32,13 @@ metadata:
 |---|---|
 | 设计系统总规则（模式/语义色/刻度/动效/裁决/验收总表） | [references/design-rules.md](references/design-rules.md) |
 | A 相机流视口（四区/overlay 帧同步/断流 STALE/宫格） | [references/camera-viewport.md](references/camera-viewport.md) |
-| B 标注画布（缩放对准光标/语义缩放/吸附/60fps，konva） | [references/canvas-annotation.md](references/canvas-annotation.md) |
-| C 3D 场景（坐标三分离/Z-up/资源所有权，three.js） | [references/3d-scene.md](references/3d-scene.md) |
+| B 标注画布（缩放对准光标/语义缩放/吸附/60fps；参考实现 konva） | [references/canvas-annotation.md](references/canvas-annotation.md) |
+| C 3D 场景（坐标三分离/Z-up/资源所有权；参考实现 three.js） | [references/3d-scene.md](references/3d-scene.md) |
 | D 运行监控（层级/点击预算/刷新分类/写防护） | [references/operate-monitoring.md](references/operate-monitoring.md) |
 | E 报警（闪烁状态机/1 击摘要/报警驱动导航） | [references/alarms.md](references/alarms.md) |
 | F 参数/配方表格（三态/URL 持久过滤/意图清单） | [references/forms-tables.md](references/forms-tables.md) |
 | G 向导（意图清单确认/可撤销/中断恢复） | [references/wizards.md](references/wizards.md) |
-| H 报表（tufte 减法/固定量程分家/ECharts 主题） | [references/reports.md](references/reports.md) |
+| H 报表（tufte 减法/固定量程分家/图表主题，参考实现 ECharts） | [references/reports.md](references/reports.md) |
 
 ## 生成到项目的文件（templates/）
 

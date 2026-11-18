@@ -12,7 +12,7 @@
 6. 标注特异点：峰/谷/拐点/换产点直接在图上写字。
 7. 禁双 Y 轴（改共享 X 轴上下堆叠小倍数图）；禁 3D；饼图默认禁（点名时 ≤4 扇）。
 8. 宽高比约 1.5:1；底色 #fffff8（浅）不纯白。
-9. ECharts 接入：`registerTheme('tufte')`（caylent 仓库 examples/echarts-tufte-theme.ts 现成代码）。
+9. 图表主题接入（参考实现 ECharts）：`registerTheme('tufte')`（caylent 仓库 examples/echarts-tufte-theme.ts 现成代码）。
 
 ## 数表规则
 

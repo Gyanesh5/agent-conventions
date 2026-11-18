@@ -1,4 +1,4 @@
-# B 族 · 标注/编辑画布（konva）
+# B 族 · 标注/编辑画布（参考实现 konva）
 
 > 底本：szilu/ux-designer-skill 13a/13b（MIT）全文数字。适用 ROI 标注、托盘总览编辑。
 
